@@ -14,10 +14,11 @@ echo Instrument the classes that we want to check coverage on
 $COBERTURA/cobertura-instrument.sh src/MindRoad/*.class --destination $INSTRUMENTED || exit
 
 echo Run the tests
-java -cp $COBERTURA/$COBERTURA.jar:$INSTRUMENTED:testng-6.8/testng-6.8.jar:test org.testng.TestNG -verbose 2 test/test.xml
+java -ea -cp $COBERTURA/$COBERTURA.jar:$INSTRUMENTED:testng-6.8/testng-6.8.jar:test org.testng.TestNG -verbose 2 test/test.xml
 
 echo Generate report
 $COBERTURA/cobertura-report.sh --format xml --destination $REPORTDIR src
 
 echo Check coverage
 $COBERTURA/cobertura-check.sh --branch 0
+
