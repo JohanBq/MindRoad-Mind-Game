@@ -36,6 +36,6 @@ public class PlayerTest {
         // gora import static org.testng.AssertJUnit.*; Den ar annars smidigare, eftersom den automatiskt skriver ut
         // expected och actual. Och for att man slipper sitta och undra varfor testerna aldrig misslyckas nar man
         // har glomt "-ea"...
-        assertEquals("Player 100: 1", res);
+        assertEquals("Player 100: x", res);
     }
 }
