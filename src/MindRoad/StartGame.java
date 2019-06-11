@@ -5,7 +5,7 @@ package MindRoad;
  */
 public class StartGame {
     public void start() {
-        GameRules gr = new GameRules(3,5);
+        GameRules gr = new GameRules(4,7);
         gr.startGame();
     }
 }
