@@ -1,6 +1,6 @@
 #!/bin/bash
 
-COBERTURA=cobertura-2.0.3
+COBERTURA=cobertura-2.1.1
 INSTRUMENTED=instrumented
 REPORTDIR=cobertura_report
 
