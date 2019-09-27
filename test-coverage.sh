@@ -1,7 +1,7 @@
 #!/bin/bash
 
 COBERTURA=cobertura-2.1.1
-SLF4J=slf4j-api.jar
+SLF4J=slf4j-api-1.7.28.jar
 INSTRUMENTED=instrumented
 REPORTDIR=cobertura_report
 
